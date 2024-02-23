@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset name="Exemplo">
+    
+    
+    
+    <description>
+        Obtenção do valor do cognitive complexity e cyclomatic complexity
+    </description>
+    
+
+    <!-- https://pmd.github.io/latest/pmd_rules_java_design.html#cyclomaticcomplexity -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="classReportLevel" value="2" />
+            <property name="methodReportLevel" value="2" />
+            <property name="cycloOptions" value="" />
+        </properties>
+    </rule>
+    
+    <rule ref="category/java/design.xml/CognitiveComplexity">
+        <properties>
+            <property name="reportLevel" value="1" />
+        </properties>
+    </rule>
+    
+    <rule ref="category/java/design.xml/CouplingBetweenObjects">
+        <properties>
+            <property name="threshold" value="1" />
+        </properties>
+    </rule>
+    
+    <rule ref="category/java/design.xml/ExcessiveImports">
+        <properties>
+            <property name="minimum" value="1.0" />
+        </properties>
+    </rule>
+    
+</ruleset>
+
